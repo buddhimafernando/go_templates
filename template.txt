@@ -1,0 +1,7 @@
+
+---- Monthly Sales Report for {{ .Month}} ----
+
+Monthly revenue of the previous month = {{ .Sales}}
+Monthly revenue of this month = {{ .MonthlyRevenue}}
+
+Growth of the month = {{.Profit}}
