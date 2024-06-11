@@ -1,0 +1,18 @@
+
+---- Employee Performance Report ----
+
+{{range $key, $val := .}}
+Name : {{$key}}
+Position : {{$val.Position}}
+Performance : {{$val.Performance}}
+{{end}}
+
+Employees with highest Performance are 
+
+{{range $key, $val := .}}
+    {{if gt $val.Performance 75}}
+Name : {{$key}}
+Position : {{$val.Position}}
+Performance : {{$val.Performance}}
+    {{end}}
+{{end}}
