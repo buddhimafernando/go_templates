@@ -1,7 +1,14 @@
+{{ define "Header" }}
+---- {{.Header.Company}} ----
+Date: {{.Header.FormatDate}}
+Currency: {{.Header.FormatCurrency}}
+{{ end }}
 
----- Monthly Sales Report for {{ .Month}} ----
+{{ template "Header" . }}
 
-Monthly revenue of the previous month = {{ .PreviousRevenue}}
-Monthly revenue of this month = {{ .MonthlyRevenue}}
+---- Monthly Sales Report for {{.MonthlySales.Month}} ----
 
-Growth of the month = {{.Profit}}
+Previous Revenue: {{.MonthlySales.PreviousRevenue}}
+Monthly Revenue: {{.MonthlySales.MonthlyRevenue}}
+Profit: {{.MonthlySales.Profit}}
+

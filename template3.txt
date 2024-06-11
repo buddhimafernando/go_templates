@@ -1,0 +1,15 @@
+{{ define "Header" }}
+---- {{.Header.Company}} ----
+Date: {{.Header.FormatDate}}
+Currency: {{.Header.FormatCurrency}}
+{{ end }}
+
+{{ template "Header" . }}
+
+---- Product Inventory ----
+{{ range .Products }}
+Product: {{.Product}}
+Quantity: {{.Quantity}}
+Price: {{.Price}}
+----------------------------------------
+{{ end }}
