@@ -8,7 +8,7 @@ Currency: {{.Header.FormatCurrency}}
 
 ---- Employee Performance Report ----
 
-{{range $key, $val := .}}
+{{range $key, $val := .Employees}}
 Name : {{$key}}
 Position : {{$val.Position}}
 Performance : {{$val.Performance}}

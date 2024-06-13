@@ -45,13 +45,20 @@ func ProductInventory() {
 	}
 
 	header := HeaderInfo()
-	tmpl, err := template.ParseFiles("template3.txt")
+	tmpl, err := template.ParseFiles("template3.tmpl")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	err = tmpl.Execute(os.Stdout, struct {
+	file, err := os.Create("templates/Template 3.txt")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	defer file.Close()
+
+	err = tmpl.Execute(file, struct {
 		Header   Header
 		Products []Product
 	}{
@@ -74,13 +81,20 @@ func EmployeePerformance() {
 	}
 
 	header := HeaderInfo()
-	tmpl, err := template.ParseFiles("template2.txt")
+	tmpl, err := template.ParseFiles("template2.tmpl")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
+	
+	file, err := os.Create("templates/Template 2.txt")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	defer file.Close()
 
-	err = tmpl.Execute(os.Stdout, struct {
+	err = tmpl.Execute(file, struct {
 		Header      Header
 		Employees   map[string]Employee
 	}{
@@ -98,13 +112,20 @@ func SalesReport() {
 	salesInfo.Profit = salesInfo.MonthlyRevenue - salesInfo.PreviousRevenue
 
 	header := HeaderInfo()
-	tmpl, err := template.ParseFiles("template.txt")
+	tmpl, err := template.ParseFiles("template.tmpl")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
+	
+	file, err := os.Create("templates/Template 1.txt")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	defer file.Close()
 
-	err = tmpl.Execute(os.Stdout, struct {
+	err = tmpl.Execute(file, struct {
 		Header     Header
 		MonthlySales MonthlySales
 	}{

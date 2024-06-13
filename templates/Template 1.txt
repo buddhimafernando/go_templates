@@ -1,0 +1,14 @@
+
+
+
+---- Evolza ----
+Date: 01/01/2021
+Currency: LKR
+
+
+---- Monthly Sales Report for January ----
+
+Previous Revenue: 900000
+Monthly Revenue: 1000000
+Profit: 100000
+

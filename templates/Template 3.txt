@@ -1,0 +1,35 @@
+
+
+
+---- Evolza ----
+Date: 01/01/2021
+Currency: LKR
+
+
+---- Product Inventory ----
+
+Product: Laptop
+Quantity: 10
+Price: 100000
+----------------------------------------
+
+Product: Mobile
+Quantity: 20
+Price: 50000
+----------------------------------------
+
+Product: Tablet
+Quantity: 30
+Price: 30000
+----------------------------------------
+
+Product: Desktop
+Quantity: 40
+Price: 80000
+----------------------------------------
+
+Product: Printer
+Quantity: 50
+Price: 20000
+----------------------------------------
+

@@ -1,0 +1,52 @@
+
+
+
+---- Evolza ----
+Date: 01/01/2021
+Currency: LKR
+
+
+---- Employee Performance Report ----
+
+
+Name : Harry Green
+Position : Sales Executive
+Performance : 70
+
+Name : Jane Smith
+Position : Assistant Manager
+Performance : 69
+
+Name : Jerry Black
+Position : Sales Executive
+Performance : 90
+
+Name : John Doe
+Position : Manager
+Performance : 60
+
+Name : Tom White
+Position : Sales Executive
+Performance : 80
+
+
+Employees with highest Performance are 
+
+
+    
+
+    
+
+    
+Name : Jerry Black
+Position : Sales Executive
+Performance : 90
+    
+
+    
+
+    
+Name : Tom White
+Position : Sales Executive
+Performance : 80
+    
